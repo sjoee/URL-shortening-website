@@ -1,0 +1,218 @@
+
+    
+<p-card header="Dashboard">
+    <div class="a">
+        <span class="p-buttonset">
+            <button pButton pRipple label="User" (click)="pageUser()"></button>
+            <button pButton pRipple label="Permission" (click)="pageRole()"></button>
+            <button pButton pRipple label="Role" (click)="pagePermission()"></button>
+        </span>
+    </div>
+</p-card>
+
+
+<p-card *ngIf="isDisplaying1">
+    <div class="b">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">
+                    <i class="pi pi-search"></i>
+                </span>
+                <input class="inputSearch" pInputText placeholder="Username/UserID" />
+            </div>
+        </div>
+    </div>
+
+    <div class="c">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Service API ID</span>
+                <input class="input" type="text" pInputText placeholder="ID" />
+            </div>
+    
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Service API Name</span> 
+                <input class="input" type="text" pInputText placeholder="Name" />
+            </div>
+
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Service API Password</span>
+                <span class="p-float-label">
+                    <p-password [(ngModel)]="value" [toggleMask]="true" class="password"></p-password>
+                    <label for ="password">Password</label>
+                </span>
+            </div>
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Role</span>
+                <input class="input" type="text" pInputText placeholder="Role" />
+            </div>
+        </div>
+
+
+        <div class="sub">
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Secret Key</span>
+                <input class="input" type="text" pInputText placeholder="Key" />
+            </div>
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Service API Role</span>
+                <input class="input" type="text" pInputText placeholder="Role" />
+            </div>
+    
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Active Status</span>
+                <input class="input" type="text" pInputText placeholder="Status" />
+                
+                
+            </div>
+        </div>
+
+        
+            
+    </div>
+
+    <!-- <div class="d">
+        
+        <div class="actionButtons">
+                <p-button icon="pi pi-pencil"></p-button>
+ 
+                <p-button icon="pi pi-trash"></p-button>
+
+                <p-button icon="pi pi-plus"></p-button>
+        </div>
+    </div> -->
+
+</p-card>
+
+
+
+<p-card *ngIf="isDisplaying2">
+
+
+    <div class="b">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">
+                    <i class="pi pi-search"></i>
+                </span>
+                <input class="inputSearch" pInputText placeholder="Role" />
+                <span class="p-inputgroup-addon">View All</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="c">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Role Name</span>
+                <input class="input" type="text" pInputText placeholder="Input Role Name" />
+            </div>
+        </div>
+
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Role ID</span>
+                <input class="input" type="text" pInputText placeholder="Input Role ID" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="d">
+        
+        <div class="actionButtons">
+                <p-button icon="pi pi-pencil"></p-button>
+ 
+                <p-button icon="pi pi-trash"></p-button>
+
+                <p-button icon="pi pi-plus"></p-button>
+        </div>
+    </div> -->
+</p-card>
+
+
+
+<p-card *ngIf="isDisplaying3">
+
+    <div class="b">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">
+                    <i class="pi pi-search"></i>
+                </span>
+                <input class="inputSearch" pInputText placeholder="Username/UserID" />
+                <span class="p-inputgroup-addon">View All</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="c">
+        <div class="sub">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Path</span>
+                <input class="input" type="text" pInputText placeholder="Input Path" />
+            </div>
+    
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Role</span> 
+                <input class="input" type="text" pInputText placeholder="Input Role" />
+            </div>
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Check create short URL</span>
+                <input class="input" type="text" pInputText placeholder="Password" />
+            </div>
+
+            
+        </div>
+
+
+        <div class="sub">
+            
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Long URL</span>
+                <input class="input" type="text" pInputText placeholder="Input Short URL" />
+            </div>
+
+
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">Store traffic details of short url</span>
+                <input class="input" type="text" pInputText placeholder="traffic details" />
+            </div>
+
+        </div>
+
+        
+            
+    </div>
+
+    <!-- <div class="d">
+        
+        <div class="actionButtons">
+                <p-button icon="pi pi-pencil"></p-button>
+ 
+                <p-button icon="pi pi-trash"></p-button>
+
+                <p-button icon="pi pi-plus"></p-button>
+        </div>
+    </div> -->
+
+</p-card>
+
+<p-card>
+    <div class="d">
+        
+        <div class="actionButtons">
+                <p-button icon="pi pi-pencil"></p-button>
+ 
+                <p-button icon="pi pi-trash"></p-button>
+
+                <p-button icon="pi pi-plus"></p-button>
+        </div>
+    </div>
+</p-card>
+

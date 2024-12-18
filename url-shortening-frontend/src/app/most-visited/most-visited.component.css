@@ -1,0 +1,63 @@
+.container {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.hoverable-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hoverable-list li {
+  background-color: #ffffff;
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.hoverable-list li:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* .par .p-progressbar{
+  height: 10px;
+} */
+
+
+.stats{
+  width: 150px;
+  height: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pbar {
+  width: 100%;
+  height: 100%;
+}
+
+
+.site{
+  width: 1000px;
+  height: 30px;
+  align-self: flex-start;
+}
+
+.list{
+  display: flex;
+  height: 40px;
+  width: fit-content;
+}
+/* * {
+  border: 1px solid black;
+} */
+
+.c {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: max-content;
+  width: max-content;
+  /* background-color: black; */
+}
